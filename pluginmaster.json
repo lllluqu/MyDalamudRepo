@@ -1,10 +1,10 @@
 [
     {
         "Author": "Zeffuro, Pie Lover; 汉化: llluqu",
-        "Name": "AetherBags 汉化版",
+        "Name": "AetherBags CN",
         "Description": "用游戏原生 UI 按自定义分类整理并显示背包物品，支持筛选、排序、固定分类与货币显示。基于 Zeffuro 的 AetherBags 全面汉化。",
         "InternalName": "AetherBagsCN",
-        "AssemblyVersion": "1.0.0.51",
+        "AssemblyVersion": "1.0.0.52",
         "RepoUrl": "https://github.com/lllluqu/AetherBags",
         "ApplicableVersion": "any",
         "Tags": [
@@ -29,9 +29,9 @@
         "ImageUrls": [
             "https://raw.githubusercontent.com/lllluqu/AetherBags/master/Images/example.png"
         ],
-        "DownloadLinkInstall": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN-1.0.0.51.zip",
-        "DownloadLinkUpdate": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN-1.0.0.51.zip",
-        "DownloadLinkTesting": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN-1.0.0.51.zip",
+        "DownloadLinkInstall": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.52/AetherBagsCN-1.0.0.52.zip",
+        "DownloadLinkUpdate": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.52/AetherBagsCN-1.0.0.52.zip",
+        "DownloadLinkTesting": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.52/AetherBagsCN-1.0.0.52.zip",
         "IsHide": false,
         "IsTestingExclusive": false,
         "DownloadCount": 0,
@@ -39,10 +39,10 @@
     },
     {
         "Author": "Infi, attick; 汉化: llluqu",
-        "Name": "MOAction 汉化版",
+        "Name": "Mouseover Action CN",
         "Description": "像宏一样对队友或敌人释放技能，但没有宏的笨重感。/mo 打开设置。基于 Infiziert90 的 MOAction 全面汉化。",
         "InternalName": "MOActionCN",
-        "AssemblyVersion": "4.10.1.2",
+        "AssemblyVersion": "4.10.1.3",
         "RepoUrl": "https://github.com/lllluqu/MOActionPluginCN",
         "ApplicableVersion": "any",
         "Tags": [
@@ -59,9 +59,9 @@
         ],
         "DalamudApiLevel": 15,
         "Punchline": "不用宏也能对悬停目标放技能",
-        "DownloadLinkInstall": "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.2/MOActionCN-4.10.1.2.zip",
-        "DownloadLinkUpdate": "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.2/MOActionCN-4.10.1.2.zip",
-        "DownloadLinkTesting": "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.2/MOActionCN-4.10.1.2.zip",
+        "DownloadLinkInstall": "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.3/MOActionCN-4.10.1.3.zip",
+        "DownloadLinkUpdate": "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.3/MOActionCN-4.10.1.3.zip",
+        "DownloadLinkTesting": "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.3/MOActionCN-4.10.1.3.zip",
         "IsHide": false,
         "IsTestingExclusive": false,
         "DownloadCount": 0,
