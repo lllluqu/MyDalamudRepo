@@ -65,36 +65,6 @@
         "IsHide": false,
         "IsTestingExclusive": false,
         "DownloadCount": 0,
-        "LastUpdated": 1794496504
-    },
-    {
-        "Author": "Infi, attick; 汉化: llluqu",
-        "Name": "MOAction 汉化版",
-        "Description": "像宏一样对队友或敌人释放技能，但没有宏的笨重感。/mo 打开设置。基于 Infiziert90 的 MOAction 全面汉化。",
-        "InternalName": "MOActionCN",
-        "AssemblyVersion": "4.10.1.2",
-        "RepoUrl": "https://github.com/lllluqu/MOActionPluginCN",
-        "ApplicableVersion": "any",
-        "Tags": [
-            "Mouseover",
-            "Macro",
-            "Ground Queue",
-            "Skills",
-            "Job",
-            "chinese",
-            "汉化"
-        ],
-        "CategoryTags": [
-            "jobs"
-        ],
-        "DalamudApiLevel": 15,
-        "Punchline": "不用宏也能对悬停目标放技能",
-        "DownloadLinkInstall": "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.2/MOActionCN-4.10.1.2.zip",
-        "DownloadLinkUpdate": "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.2/MOActionCN-4.10.1.2.zip",
-        "DownloadLinkTesting": "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.2/MOActionCN-4.10.1.2.zip",
-        "IsHide": false,
-        "IsTestingExclusive": false,
-        "DownloadCount": 0,
         "LastUpdated": 1794496960
     }
 ]
