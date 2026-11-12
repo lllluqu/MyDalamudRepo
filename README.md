@@ -37,6 +37,19 @@
 
 因为内部名不同，**汉化版可以与英文原版同时安装**，互不冲突；但两边的设置、分类配置彼此独立，不会自动迁移。
 
+## 版本号规则
+
+Dalamud 只接受 4 段版本号，所以汉化版用「原版基线 + 汉化修订」拼成第 4 段：
+
+| 含义 | 版本号 |
+| --- | --- |
+| 英文原版 | `1.0.0.5` |
+| 汉化修订 1（对应原版 1.0.0.5） | `1.0.0.51` |
+| 汉化修订 2 | `1.0.0.52` |
+| 原版升级到 1.0.0.6 后的汉化修订 1 | `1.0.0.61` |
+
+也就是把 `1.0.0.5.1` 写成 `1.0.0.51`，看第 4 段就能同时知道原版基线和汉化次数。
+
 ## 功能概览
 
 - 用游戏原生 UI 替换/增强背包显示，按分类展示物品。
@@ -64,12 +77,12 @@ dotnet build -c Release
 
 发布新版本的步骤：
 
-1. 修改源码仓库 `AetherBags/AetherBags.csproj` 里的 `<Version>`（如 `1.0.0.7`）。
+1. 修改源码仓库 `AetherBags/AetherBags.csproj` 里的 `<Version>`（按上面的规则，例如汉化修订 2 就写 `1.0.0.52`）。
 2. 本地 `dotnet build -c Release`，产物为 `AetherBags/bin/x64/Release/AetherBagsCN/latest.zip`。
-3. 在源码仓库创建 `v1.0.0.7` 标签与 Release，把 `latest.zip` 重命名为 `AetherBagsCN.zip` 后上传。
+3. 在源码仓库创建 `v1.0.0.52` 标签与 Release，把 `latest.zip` 重命名为 `AetherBagsCN-1.0.0.52.zip` 后上传（文件名带版本号可以避免 GitHub 下载缓存命中旧文件）。
 4. 更新本仓库 `pluginmaster.json` 的 `AssemblyVersion`、`DownloadLinkInstall`、`DownloadLinkUpdate`、`DownloadLinkTesting` 与 `LastUpdated`（Unix 秒）。
 
-> 也可以把第 2–3 步交给 GitHub Actions 自动完成：源码仓库已准备好工作流文件（需要仓库写入令牌额外勾选 `Workflows` 权限才能提交），提交后推送 `v*` 标签即可自动构建并发布。
+> 源码仓库已包含 `.github/workflows/release.yml`：推送 `v*` 标签后会自动构建并创建 Release（也可以在该仓库的 Actions 页面手动触发）。
 
 ## 致谢与许可
 
