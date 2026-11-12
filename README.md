@@ -89,3 +89,7 @@ dotnet build -c Release
 - 原插件作者：Zeffuro、Pie Lover（[Zeffuro/AetherBags](https://github.com/Zeffuro/AetherBags)）
 - UI 框架：[KamiToolKit](https://github.com/MidoriKami/KamiToolKit)（MidoriKami）
 - 本项目遵循原仓库的 **AGPL-3.0** 许可，源码同样公开。
+
+## 维护者：同步上游
+
+上游发版后如何合并、补翻译并重新发布，见源码仓库的 [上游同步指南](https://github.com/lllluqu/AetherBags/blob/master/docs/localization-sync.md)。
