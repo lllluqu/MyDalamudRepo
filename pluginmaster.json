@@ -4,7 +4,7 @@
         "Name": "AetherBags 汉化版",
         "Description": "用游戏原生 UI 按自定义分类整理并显示背包物品，支持筛选、排序、固定分类与货币显示。基于 Zeffuro 的 AetherBags 全面汉化。",
         "InternalName": "AetherBagsCN",
-        "AssemblyVersion": "1.0.0.7",
+        "AssemblyVersion": "1.0.0.51",
         "RepoUrl": "https://github.com/lllluqu/AetherBags",
         "ApplicableVersion": "any",
         "Tags": [
@@ -29,12 +29,12 @@
         "ImageUrls": [
             "https://raw.githubusercontent.com/lllluqu/AetherBags/master/Images/example.png"
         ],
-        "DownloadLinkInstall": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.7/AetherBagsCN.zip",
-        "DownloadLinkUpdate": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.7/AetherBagsCN.zip",
-        "DownloadLinkTesting": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.7/AetherBagsCN.zip",
+        "DownloadLinkInstall": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN.zip",
+        "DownloadLinkUpdate": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN.zip",
+        "DownloadLinkTesting": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN.zip",
         "IsHide": false,
         "IsTestingExclusive": false,
         "DownloadCount": 0,
-        "LastUpdated": 1794483069
+        "LastUpdated": 1794483245
     }
 ]
