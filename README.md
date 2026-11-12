@@ -1,95 +1,63 @@
-# AetherBags 汉化版 — Dalamud 插件源
+# MyDalamudRepo — 汉化插件聚合源
 
-这是 [AetherBags](https://github.com/Zeffuro/AetherBags)（FF14 背包分类插件）的简体中文汉化版插件源，汉化由 [lllluqu](https://github.com/lllluqu) 维护。
-
-- 汉化源码：[lllluqu/AetherBags](https://github.com/lllluqu/AetherBags)
-- 本仓库只存放 Dalamud 插件源清单 `pluginmaster.json`，插件本体从源码仓库的 Release 下载。
+这里收录 lllluqu 维护的 Dalamud 汉化 / 中文插件，所有插件共用一个仓库地址，添加一次即可。
+仓库本身只存放插件源清单 [`pluginmaster.json`](pluginmaster.json)，插件本体从各自源码仓库的 Release 下载。
 
 ## 安装
 
-1. 在游戏内输入 `/xlplugins` 打开插件安装器。
-2. 点击底部的 **设置 / Settings**，切到 **实验性功能 / Experimental** 标签页。
-3. 在 **自定义插件仓库 / Custom Plugin Repositories** 里粘贴下面的地址，点击 `+`，勾选启用：
+1. 游戏内输入 `/xlsettings` 打开 Dalamud 设置。
+2. 切到 **实验性功能 / Experimental** 标签页。
+3. 在 **自定义插件仓库 / Custom Plugin Repositories** 里粘贴下面的地址，点 `+` 并勾选启用：
 
    ```
-   https://raw.githubusercontent.com/lllluqu/AetherBags-Repo/main/pluginmaster.json
+   https://raw.githubusercontent.com/lllluqu/MyDalamudRepo/main/pluginmaster.json
    ```
 
-4. 点击 **保存并关闭**，插件列表会刷新，搜索 **AetherBags 汉化版** 并安装。
+4. **保存并关闭**，然后在 `/xlplugins` 里刷新插件列表，搜索插件名安装。
 
-> 如果 `raw.githubusercontent.com` 访问困难，可改用加速镜像（把上面的地址替换成镜像前缀 + 原地址），或直接把 `pluginmaster.json` 与 Release 里的 zip 放到自己的静态服务器上。
+> 如果 `raw.githubusercontent.com` 访问困难，可以把地址换成镜像前缀 + 原地址，或把 `pluginmaster.json` 与 Release 里的 zip 放到自己的静态服务器。
 
-## 语言说明
+## 收录插件
 
-- 默认 **跟随客户端语言**：国服 / 中文客户端自动显示简体中文，其他语言客户端显示英文。
-- 也可以在插件设置 → 常规 → **语言 / Language** 中手动切换「自动（跟随客户端）」「简体中文」「English」。
-- 切换语言后需要关闭并重新打开插件窗口才会生效。
+| 插件 | 内部名 | 说明 | 源码 / 文档 |
+| --- | --- | --- | --- |
+| **AetherBags 汉化版** | `AetherBagsCN` | 用原生 UI 按分类整理背包，支持自定义分类、规则筛选、排序、货币显示等 | [lllluqu/AetherBags](https://github.com/lllluqu/AetherBags) |
 
-## 与英文原版的区别
+每个插件的安装、语言设置、版本号规则等详细说明，见各自源码仓库的 README（如 AetherBags 的[中文说明](https://github.com/lllluqu/AetherBags#%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96%E7%89%88--chinese-localization)）。
 
-| 项目 | 原版 | 汉化版 |
-| --- | --- | --- |
-| 插件内部名 | `AetherBags` | `AetherBagsCN` |
-| 显示名称 | AetherBags | AetherBags 汉化版 |
-| 配置目录 | `PluginConfigs/AetherBags` | `PluginConfigs/AetherBagsCN` |
-| 游戏内 addon 名 | `AetherBags_*` | `AetherBagsCN_*` |
-| IPC 前缀 | `AetherBags.` | `AetherBagsCN.` |
+## 维护者：新增一个插件
 
-因为内部名不同，**汉化版可以与英文原版同时安装**，互不冲突；但两边的设置、分类配置彼此独立，不会自动迁移。
+1. 在插件源码仓库里构建并发布 Release，资产名带版本号（如 `AetherBagsCN-1.0.0.51.zip`），避免 GitHub 下载缓存命中旧文件。
+2. 在 `pluginmaster.json` 数组里追加一条：
 
-## 版本号规则
-
-Dalamud 只接受 4 段版本号，所以汉化版用「原版基线 + 汉化修订」拼成第 4 段：
-
-| 含义 | 版本号 |
-| --- | --- |
-| 英文原版 | `1.0.0.5` |
-| 汉化修订 1（对应原版 1.0.0.5） | `1.0.0.51` |
-| 汉化修订 2 | `1.0.0.52` |
-| 原版升级到 1.0.0.6 后的汉化修订 1 | `1.0.0.61` |
-
-也就是把 `1.0.0.5.1` 写成 `1.0.0.51`，看第 4 段就能同时知道原版基线和汉化次数。
-
-## 功能概览
-
-- 用游戏原生 UI 替换/增强背包显示，按分类展示物品。
-- 自定义分类：名称、描述、颜色、优先级、固定、启用开关。
-- 规则筛选：物品 ID、名称正则、界面分类、等级 / 物品品级 / 商店价格区间、稀有度、可交易 / 可染色 / 可分解 / 精炼度等状态。
-- 支持游戏分类、自定义分类、Allagan Tools 筛选、BisBuddy 毕业装备、水晶、重要物品等来源。
-- 分类显示顺序、物品排序规则、紧凑排布、窗口尺寸、快捷键、服务器信息栏（DTR）格式、最近拾取等设置项。
-- 配置导入 / 导出（含 SortaKinda 分类导入）。
-
-## 更新日志
-
-插件自带的更新日志窗口（设置窗口右上角问号按钮）里可以看到每个版本的改动；仓库里的 [changelog](https://github.com/lllluqu/AetherBags/blob/master/AetherBags/changelog.md) 同步维护。
-
-## 自行构建
-
-```powershell
-git clone --recurse-submodules https://github.com/lllluqu/AetherBags.git
-cd AetherBags
-dotnet build -c Release
+```json
+{
+    "Author": "作者 / 汉化者",
+    "Name": "插件显示名",
+    "Description": "插件简介（中文）",
+    "InternalName": "PluginInternalName",
+    "AssemblyVersion": "1.0.0.1",
+    "RepoUrl": "https://github.com/lllluqu/插件源码仓库",
+    "ApplicableVersion": "any",
+    "Tags": ["ui"],
+    "CategoryTags": ["ui"],
+    "DalamudApiLevel": 15,
+    "Punchline": "一句话简介",
+    "IconUrl": "https://raw.githubusercontent.com/lllluqu/插件源码仓库/master/Images/icon.png",
+    "DownloadLinkInstall": "https://github.com/lllluqu/插件源码仓库/releases/download/v1.0.0.1/Plugin-1.0.0.1.zip",
+    "DownloadLinkUpdate": "https://github.com/lllluqu/插件源码仓库/releases/download/v1.0.0.1/Plugin-1.0.0.1.zip",
+    "DownloadLinkTesting": "https://github.com/lllluqu/插件源码仓库/releases/download/v1.0.0.1/Plugin-1.0.0.1.zip",
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "DownloadCount": 0,
+    "LastUpdated": 0
+}
 ```
 
-需要 .NET 10 SDK，以及 Dalamud 开发库（`%AppData%\XIVLauncher\addon\Hooks\dev`，可从 <https://goatcorp.github.io/dalamud-distrib/latest.zip> 获取）。
+3. 提交 `pluginmaster.json` 即可，玩家刷新列表后就能看到新插件。
 
-打包产物位于 `AetherBags/bin/x64/Release/AetherBagsCN/latest.zip`。
+## 说明
 
-发布新版本的步骤：
-
-1. 修改源码仓库 `AetherBags/AetherBags.csproj` 里的 `<Version>`（按上面的规则，例如汉化修订 2 就写 `1.0.0.52`）。
-2. 本地 `dotnet build -c Release`，产物为 `AetherBags/bin/x64/Release/AetherBagsCN/latest.zip`。
-3. 在源码仓库创建 `v1.0.0.52` 标签与 Release，把 `latest.zip` 重命名为 `AetherBagsCN-1.0.0.52.zip` 后上传（文件名带版本号可以避免 GitHub 下载缓存命中旧文件）。
-4. 更新本仓库 `pluginmaster.json` 的 `AssemblyVersion`、`DownloadLinkInstall`、`DownloadLinkUpdate`、`DownloadLinkTesting` 与 `LastUpdated`（Unix 秒）。
-
-> 源码仓库已包含 `.github/workflows/release.yml`：推送 `v*` 标签后会自动构建并创建 Release（也可以在该仓库的 Actions 页面手动触发）。
-
-## 致谢与许可
-
-- 原插件作者：Zeffuro、Pie Lover（[Zeffuro/AetherBags](https://github.com/Zeffuro/AetherBags)）
-- UI 框架：[KamiToolKit](https://github.com/MidoriKami/KamiToolKit)（MidoriKami）
-- 本项目遵循原仓库的 **AGPL-3.0** 许可，源码同样公开。
-
-## 维护者：同步上游
-
-上游发版后如何合并、补翻译并重新发布，见源码仓库的 [上游同步指南](https://github.com/lllluqu/AetherBags/blob/master/docs/localization-sync.md)。
+- 插件之间保持各自独立的 `InternalName`，可与对应的英文原版同时安装。
+- 每个插件遵循其源码仓库的许可证（AetherBags 为 AGPL-3.0）。
+- 插件源格式参考 [Dalamud 官方文档](https://dalamud.dev/plugin-publishing/custom-repositories/)。
