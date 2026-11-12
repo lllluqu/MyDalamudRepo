@@ -1,40 +1,75 @@
 [
     {
-        "Author": "Zeffuro, Pie Lover; 汉化: llluqu",
-        "Name": "AetherBags 汉化版",
-        "Description": "用游戏原生 UI 按自定义分类整理并显示背包物品，支持筛选、排序、固定分类与货币显示。基于 Zeffuro 的 AetherBags 全面汉化。",
-        "InternalName": "AetherBagsCN",
-        "AssemblyVersion": "1.0.0.51",
-        "RepoUrl": "https://github.com/lllluqu/AetherBags",
-        "ApplicableVersion": "any",
-        "Tags": [
-            "inventory",
-            "bags",
-            "organization",
-            "categories",
-            "filters",
-            "sorting",
-            "qol",
-            "ui",
-            "chinese",
-            "汉化"
-        ],
-        "CategoryTags": [
-            "ui",
-            "inventory"
-        ],
-        "DalamudApiLevel": 15,
-        "Punchline": "再也不用对着背包发愁！",
-        "IconUrl": "https://raw.githubusercontent.com/lllluqu/AetherBags/master/Images/icon.png",
-        "ImageUrls": [
-            "https://raw.githubusercontent.com/lllluqu/AetherBags/master/Images/example.png"
-        ],
-        "DownloadLinkInstall": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN-1.0.0.51.zip",
-        "DownloadLinkUpdate": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN-1.0.0.51.zip",
-        "DownloadLinkTesting": "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN-1.0.0.51.zip",
-        "IsHide": false,
-        "IsTestingExclusive": false,
-        "DownloadCount": 0,
-        "LastUpdated": 1794483492
+        "value":  [
+                      {
+                          "Author":  "Zeffuro, Pie Lover; 汉化: llluqu",
+                          "Name":  "AetherBags 汉化版",
+                          "Description":  "用游戏原生 UI 按自定义分类整理并显示背包物品，支持筛选、排序、固定分类与货币显示。基于 Zeffuro 的 AetherBags 全面汉化。",
+                          "InternalName":  "AetherBagsCN",
+                          "AssemblyVersion":  "1.0.0.51",
+                          "RepoUrl":  "https://github.com/lllluqu/AetherBags",
+                          "ApplicableVersion":  "any",
+                          "Tags":  [
+                                       "inventory",
+                                       "bags",
+                                       "organization",
+                                       "categories",
+                                       "filters",
+                                       "sorting",
+                                       "qol",
+                                       "ui",
+                                       "chinese",
+                                       "汉化"
+                                   ],
+                          "CategoryTags":  [
+                                               "ui",
+                                               "inventory"
+                                           ],
+                          "DalamudApiLevel":  15,
+                          "Punchline":  "再也不用对着背包发愁！",
+                          "IconUrl":  "https://raw.githubusercontent.com/lllluqu/AetherBags/master/Images/icon.png",
+                          "ImageUrls":  [
+                                            "https://raw.githubusercontent.com/lllluqu/AetherBags/master/Images/example.png"
+                                        ],
+                          "DownloadLinkInstall":  "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN-1.0.0.51.zip",
+                          "DownloadLinkUpdate":  "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN-1.0.0.51.zip",
+                          "DownloadLinkTesting":  "https://github.com/lllluqu/AetherBags/releases/download/v1.0.0.51/AetherBagsCN-1.0.0.51.zip",
+                          "IsHide":  false,
+                          "IsTestingExclusive":  false,
+                          "DownloadCount":  0,
+                          "LastUpdated":  1794483492
+                      }
+                  ],
+        "Count":  1
+    },
+    {
+        "Author":  "Infi, attick; 汉化: llluqu",
+        "Name":  "MOAction 汉化版",
+        "Description":  "像宏一样对队友或敌人释放技能，但没有宏的笨重感。/mo 打开设置。基于 Infiziert90 的 MOAction 全面汉化。",
+        "InternalName":  "MOActionCN",
+        "AssemblyVersion":  "4.10.1.1",
+        "RepoUrl":  "https://github.com/lllluqu/MOActionPluginCN",
+        "ApplicableVersion":  "any",
+        "Tags":  [
+                     "Mouseover",
+                     "Macro",
+                     "Ground Queue",
+                     "Skills",
+                     "Job",
+                     "chinese",
+                     "汉化"
+                 ],
+        "CategoryTags":  [
+                             "jobs"
+                         ],
+        "DalamudApiLevel":  15,
+        "Punchline":  "不用宏也能对悬停目标放技能",
+        "DownloadLinkInstall":  "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.1/MOActionCN-4.10.1.1.zip",
+        "DownloadLinkUpdate":  "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.1/MOActionCN-4.10.1.1.zip",
+        "DownloadLinkTesting":  "https://github.com/lllluqu/MOActionPluginCN/releases/download/v4.10.1.1/MOActionCN-4.10.1.1.zip",
+        "IsHide":  false,
+        "IsTestingExclusive":  false,
+        "DownloadCount":  0,
+        "LastUpdated":  1794496504
     }
 ]
