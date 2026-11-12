@@ -22,14 +22,13 @@
 | 插件 | 内部名 | 说明 | 源码 / 文档 |
 | --- | --- | --- | --- |
 | **AetherBags 汉化版** | `AetherBagsCN` | 用原生 UI 按分类整理背包，支持自定义分类、规则筛选、排序、货币显示等 | [lllluqu/AetherBags](https://github.com/lllluqu/AetherBags) |
-| **MOAction 汉化版** | `MOActionCN` | 不用宏也能对悬停目标释放技能，支持按职业配置动作堆栈与修饰键 | [lllluqu/MOActionPluginCN](https://github.com/lllluqu/MOActionPluginCN) |
 
 每个插件的安装、语言设置、版本号规则等详细说明，见各自源码仓库的 README（如 AetherBags 的[中文说明](https://github.com/lllluqu/AetherBags#%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96%E7%89%88--chinese-localization)）。
 
 ## 维护者：新增一个插件
 
 1. 在插件源码仓库里构建并发布 Release，资产名带版本号（如 `AetherBagsCN-1.0.0.51.zip`），避免 GitHub 下载缓存命中旧文件。
-2. 在 `pluginmaster.json` 数组里追加一条：
+2. 把新条目保存成 `entry.json`（模板如下）：
 
 ```json
 {
@@ -55,7 +54,15 @@
 }
 ```
 
-3. 提交 `pluginmaster.json` 即可，玩家刷新列表后就能看到新插件。
+3. 合并进清单（按 `InternalName` 去重，同名的旧条目会被替换）：
+
+   ```powershell
+   python tools/merge_pluginmaster.py --master pluginmaster.json --entry entry.json
+   ```
+
+4. 提交 `pluginmaster.json`，玩家刷新列表后就能看到新插件。
+
+> 不要直接用 PowerShell 的 `ConvertTo-Json` 往数组里加对象：PS 5.1 会把嵌套数组写成 `{"value": [...], "Count": n}`，Dalamud 会解析失败。上面的脚本会按标准扁平数组写出。
 
 ## 说明
 
