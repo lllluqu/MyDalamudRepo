@@ -62,7 +62,14 @@ dotnet build -c Release
 
 打包产物位于 `AetherBags/bin/x64/Release/AetherBagsCN/latest.zip`。
 
-发布新版本时，把 `AetherBags.csproj` 里的 `<Version>` 提升并推送 `v*` 标签，GitHub Actions 会自动构建并创建 Release（见 `.github/workflows/release.yml`）。
+发布新版本的步骤：
+
+1. 修改源码仓库 `AetherBags/AetherBags.csproj` 里的 `<Version>`（如 `1.0.0.7`）。
+2. 本地 `dotnet build -c Release`，产物为 `AetherBags/bin/x64/Release/AetherBagsCN/latest.zip`。
+3. 在源码仓库创建 `v1.0.0.7` 标签与 Release，把 `latest.zip` 重命名为 `AetherBagsCN.zip` 后上传。
+4. 更新本仓库 `pluginmaster.json` 的 `AssemblyVersion`、`DownloadLinkInstall`、`DownloadLinkUpdate`、`DownloadLinkTesting` 与 `LastUpdated`（Unix 秒）。
+
+> 也可以把第 2–3 步交给 GitHub Actions 自动完成：源码仓库已准备好工作流文件（需要仓库写入令牌额外勾选 `Workflows` 权限才能提交），提交后推送 `v*` 标签即可自动构建并发布。
 
 ## 致谢与许可
 
