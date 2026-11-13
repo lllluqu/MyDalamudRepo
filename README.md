@@ -23,6 +23,7 @@
 | --- | --- | --- | --- |
 | **AetherBags CN** | `AetherBagsCN` | 用原生 UI 按分类整理背包，支持自定义分类、规则筛选、排序、货币显示等 | [lllluqu/AetherBags](https://github.com/lllluqu/AetherBags) |
 | **Mouseover Action CN** | `MOActionCN` | 不用宏也能对悬停目标释放技能，支持按职业配置动作堆栈与修饰键 | [lllluqu/MOActionPluginCN](https://github.com/lllluqu/MOActionPluginCN) |
+| **JobBars CN** | `JobBarsCN` | 额外职业量谱、队友增益计时、减伤监控、图标替换与光标提示 | [lllluqu/JobBarsCN](https://github.com/lllluqu/JobBarsCN) |
 
 每个插件的安装、语言设置、版本号规则等详细说明，见各自源码仓库的 README（如 AetherBags 的[中文说明](https://github.com/lllluqu/AetherBags#%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96%E7%89%88--chinese-localization)）。
 
@@ -68,5 +69,5 @@
 ## 说明
 
 - 插件之间保持各自独立的 `InternalName`，可与对应的英文原版同时安装。
-- 每个插件遵循其源码仓库的许可证（AetherBags 为 AGPL-3.0）。
+- 每个插件遵循其源码仓库的许可证（AetherBags、JobBars 为 AGPL-3.0）。
 - 插件源格式参考 [Dalamud 官方文档](https://dalamud.dev/plugin-publishing/custom-repositories/)。

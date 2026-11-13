@@ -38,6 +38,35 @@
         "LastUpdated": 1794483492
     },
     {
+        "Author": "ocealot; 汉化: llluqu",
+        "Name": "JobBars CN",
+        "Description": "额外的职业量谱、队友增益计时、减伤监控等。图标作者 PAPACHIN。基于 ocealot 的 JobBars 全面汉化。",
+        "InternalName": "JobBarsCN",
+        "AssemblyVersion": "1.3.3.3",
+        "RepoUrl": "https://github.com/lllluqu/JobBarsCN",
+        "ApplicableVersion": "any",
+        "Tags": [
+            "UI",
+            "Bars",
+            "chinese",
+            "汉化"
+        ],
+        "CategoryTags": [
+            "jobs",
+            "ui"
+        ],
+        "DalamudApiLevel": 15,
+        "Punchline": "更多职业量谱",
+        "IconUrl": "https://raw.githubusercontent.com/lllluqu/JobBarsCN/main/assets/icon.png",
+        "DownloadLinkInstall": "https://github.com/lllluqu/JobBarsCN/releases/download/v1.3.3.3/JobBarsCN-1.3.3.3.zip",
+        "DownloadLinkUpdate": "https://github.com/lllluqu/JobBarsCN/releases/download/v1.3.3.3/JobBarsCN-1.3.3.3.zip",
+        "DownloadLinkTesting": "https://github.com/lllluqu/JobBarsCN/releases/download/v1.3.3.3/JobBarsCN-1.3.3.3.zip",
+        "IsHide": false,
+        "IsTestingExclusive": false,
+        "DownloadCount": 0,
+        "LastUpdated": 1794532549
+    },
+    {
         "Author": "Infi, attick; 汉化: llluqu",
         "Name": "Mouseover Action CN",
         "Description": "像宏一样对队友或敌人释放技能，但没有宏的笨重感。/mo 打开设置。基于 Infiziert90 的 MOAction 全面汉化。",
