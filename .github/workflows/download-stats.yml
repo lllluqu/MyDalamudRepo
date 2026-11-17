@@ -1,0 +1,30 @@
+name: Sync download stats
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python tools/sync_stats.py pluginmaster.json
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet pluginmaster.json; then
+            git add pluginmaster.json
+            git commit -m "chore: 同步插件下载量统计（GitHub Actions）"
+            git push
+          else
+            echo "no changes"
+          fi

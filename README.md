@@ -19,12 +19,14 @@
 
 ## 收录插件
 
-| 插件 | 内部名 | 说明 | 源码 / 文档 |
-| --- | --- | --- | --- |
-| **AetherBags CN** | `AetherBagsCN` | 用原生 UI 按分类整理背包，支持自定义分类、规则筛选、排序、货币显示等 | [lllluqu/AetherBags](https://github.com/lllluqu/AetherBags) |
-| **Avarice CN** | `AvariceCN` | 像素级精确的身位判定反馈：背/侧身预读扇形、射程圈、场中心点、命中/未命中反馈等 | [lllluqu/AvariceCN](https://github.com/lllluqu/AvariceCN) |
-| **Mouseover Action CN** | `MOActionCN` | 不用宏也能对悬停目标释放技能，支持按职业配置动作堆栈与修饰键 | [lllluqu/MOActionPluginCN](https://github.com/lllluqu/MOActionPluginCN) |
-| **JobBars CN** | `JobBarsCN` | 额外职业量谱、队友增益计时、减伤监控、图标替换与光标提示 | [lllluqu/JobBarsCN](https://github.com/lllluqu/JobBarsCN) |
+| 插件 | 内部名 | 下载量 | 说明 | 源码 / 文档 |
+| --- | --- | --- | --- | --- |
+| **AetherBags CN** | `AetherBagsCN` | [![下载](https://img.shields.io/github/downloads/lllluqu/AetherBags/total?label=%E4%B8%8B%E8%BD%BD&color=blue)](https://github.com/lllluqu/AetherBags/releases) | 用原生 UI 按分类整理背包，支持自定义分类、规则筛选、排序、货币显示等 | [lllluqu/AetherBags](https://github.com/lllluqu/AetherBags) |
+| **Avarice CN** | `AvariceCN` | [![下载](https://img.shields.io/github/downloads/lllluqu/AvariceCN/total?label=%E4%B8%8B%E8%BD%BD&color=blue)](https://github.com/lllluqu/AvariceCN/releases) | 像素级精确的身位判定反馈：背/侧身预读扇形、射程圈、场中心点、命中/未命中反馈等 | [lllluqu/AvariceCN](https://github.com/lllluqu/AvariceCN) |
+| **Mouseover Action CN** | `MOActionCN` | [![下载](https://img.shields.io/github/downloads/lllluqu/MOActionPluginCN/total?label=%E4%B8%8B%E8%BD%BD&color=blue)](https://github.com/lllluqu/MOActionPluginCN/releases) | 不用宏也能对悬停目标释放技能，支持按职业配置动作堆栈与修饰键 | [lllluqu/MOActionPluginCN](https://github.com/lllluqu/MOActionPluginCN) |
+| **JobBars CN** | `JobBarsCN` | [![下载](https://img.shields.io/github/downloads/lllluqu/JobBarsCN/total?label=%E4%B8%8B%E8%BD%BD&color=blue)](https://github.com/lllluqu/JobBarsCN/releases) | 额外职业量谱、队友增益计时、减伤监控、图标替换与光标提示 | [lllluqu/JobBarsCN](https://github.com/lllluqu/JobBarsCN) |
+
+下载量徽章由 [shields.io](https://shields.io) 实时渲染（数据来自 GitHub Releases 资产下载数，约 5 分钟缓存；GitHub 按 24 小时内同一请求方最多计一次，所以近似"独立安装/更新次数"）。若 shields.io 访问困难，可把徽章域名换成国内镜像（如 `img.shields.icu`）。同时 [`.github/workflows/download-stats.yml`](.github/workflows/download-stats.yml) 每 15 分钟把这些数字同步进 `pluginmaster.json` 的 `DownloadCount` 字段（脚本：[`tools/sync_stats.py`](tools/sync_stats.py)）。
 
 每个插件的安装、语言设置、版本号规则等详细说明，见各自源码仓库的 README（如 AetherBags 的[中文说明](https://github.com/lllluqu/AetherBags#%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96%E7%89%88--chinese-localization)）。
 
@@ -56,6 +58,8 @@
     "LastUpdated": 0
 }
 ```
+
+> `DownloadCount` 填 0 即可，Actions 会定时用真实数据覆盖。
 
 3. 合并进清单（按 `InternalName` 去重，同名的旧条目会被替换）：
 
