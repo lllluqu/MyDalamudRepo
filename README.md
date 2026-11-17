@@ -22,6 +22,7 @@
 | 插件 | 内部名 | 说明 | 源码 / 文档 |
 | --- | --- | --- | --- |
 | **AetherBags CN** | `AetherBagsCN` | 用原生 UI 按分类整理背包，支持自定义分类、规则筛选、排序、货币显示等 | [lllluqu/AetherBags](https://github.com/lllluqu/AetherBags) |
+| **Avarice CN** | `AvariceCN` | 像素级精确的身位判定反馈：背/侧身预读扇形、射程圈、场中心点、命中/未命中反馈等 | [lllluqu/AvariceCN](https://github.com/lllluqu/AvariceCN) |
 | **Mouseover Action CN** | `MOActionCN` | 不用宏也能对悬停目标释放技能，支持按职业配置动作堆栈与修饰键 | [lllluqu/MOActionPluginCN](https://github.com/lllluqu/MOActionPluginCN) |
 | **JobBars CN** | `JobBarsCN` | 额外职业量谱、队友增益计时、减伤监控、图标替换与光标提示 | [lllluqu/JobBarsCN](https://github.com/lllluqu/JobBarsCN) |
 
@@ -69,5 +70,5 @@
 ## 说明
 
 - 插件之间保持各自独立的 `InternalName`，可与对应的英文原版同时安装。
-- 每个插件遵循其源码仓库的许可证（AetherBags、JobBars 为 AGPL-3.0）。
+- 每个插件遵循其源码仓库的许可证（AetherBags、JobBars 为 AGPL-3.0，Avarice 为 BSD-3-Clause）。
 - 插件源格式参考 [Dalamud 官方文档](https://dalamud.dev/plugin-publishing/custom-repositories/)。
