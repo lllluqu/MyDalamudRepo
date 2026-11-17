@@ -38,6 +38,35 @@
         "LastUpdated": 1794483492
     },
     {
+        "Author": "kawaii, NightmareXIV, Wah; 汉化: llluqu",
+        "Name": "Avarice CN",
+        "Description": "身位判定反馈：像素级精确的背/侧身指示、射程圈、预读身位、场中心点等。基于 PunishXIV 的 Avarice 全面汉化。",
+        "InternalName": "AvariceCN",
+        "AssemblyVersion": "2.2.0.1401",
+        "RepoUrl": "https://github.com/lllluqu/AvariceCN",
+        "ApplicableVersion": "any",
+        "Tags": [
+            "combat",
+            "positional",
+            "jobs",
+            "chinese",
+            "汉化"
+        ],
+        "CategoryTags": [
+            "jobs"
+        ],
+        "DalamudApiLevel": 15,
+        "Punchline": "像素级精确的身位与射程指示",
+        "IconUrl": "https://raw.githubusercontent.com/lllluqu/AvariceCN/master/Assets/avarice_icon.png",
+        "DownloadLinkInstall": "https://github.com/lllluqu/AvariceCN/releases/download/v2.2.0.1401/AvariceCN-2.2.0.1401.zip",
+        "DownloadLinkUpdate": "https://github.com/lllluqu/AvariceCN/releases/download/v2.2.0.1401/AvariceCN-2.2.0.1401.zip",
+        "DownloadLinkTesting": "https://github.com/lllluqu/AvariceCN/releases/download/v2.2.0.1401/AvariceCN-2.2.0.1401.zip",
+        "IsHide": false,
+        "IsTestingExclusive": false,
+        "DownloadCount": 0,
+        "LastUpdated": 1794919971
+    },
+    {
         "Author": "ocealot; 汉化: llluqu",
         "Name": "JobBars CN",
         "Description": "额外的职业量谱、队友增益计时、减伤监控等。图标作者 PAPACHIN。基于 ocealot 的 JobBars 全面汉化。",
