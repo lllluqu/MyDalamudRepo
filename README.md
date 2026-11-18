@@ -30,47 +30,6 @@
 
 每个插件的安装、语言设置、版本号规则等详细说明，见各自源码仓库的 README（如 AetherBags 的[中文说明](https://github.com/lllluqu/AetherBags#%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E6%B1%89%E5%8C%96%E7%89%88--chinese-localization)）。
 
-## 维护者：新增一个插件
-
-1. 在插件源码仓库里构建并发布 Release，资产名带版本号（如 `AetherBagsCN-1.0.0.51.zip`），避免 GitHub 下载缓存命中旧文件。
-2. 把新条目保存成 `entry.json`（模板如下）：
-
-```json
-{
-    "Author": "作者 / 汉化者",
-    "Name": "插件显示名",
-    "Description": "插件简介（中文）",
-    "InternalName": "PluginInternalName",
-    "AssemblyVersion": "1.0.0.1",
-    "RepoUrl": "https://github.com/lllluqu/插件源码仓库",
-    "ApplicableVersion": "any",
-    "Tags": ["ui"],
-    "CategoryTags": ["ui"],
-    "DalamudApiLevel": 15,
-    "Punchline": "一句话简介",
-    "IconUrl": "https://raw.githubusercontent.com/lllluqu/插件源码仓库/master/Images/icon.png",
-    "DownloadLinkInstall": "https://github.com/lllluqu/插件源码仓库/releases/download/v1.0.0.1/Plugin-1.0.0.1.zip",
-    "DownloadLinkUpdate": "https://github.com/lllluqu/插件源码仓库/releases/download/v1.0.0.1/Plugin-1.0.0.1.zip",
-    "DownloadLinkTesting": "https://github.com/lllluqu/插件源码仓库/releases/download/v1.0.0.1/Plugin-1.0.0.1.zip",
-    "IsHide": false,
-    "IsTestingExclusive": false,
-    "DownloadCount": 0,
-    "LastUpdated": 0
-}
-```
-
-> `DownloadCount` 填 0 即可，Actions 会定时用真实数据覆盖。
-
-3. 合并进清单（按 `InternalName` 去重，同名的旧条目会被替换）：
-
-   ```powershell
-   python tools/merge_pluginmaster.py --master pluginmaster.json --entry entry.json
-   ```
-
-4. 提交 `pluginmaster.json`，玩家刷新列表后就能看到新插件。
-
-> 不要直接用 PowerShell 的 `ConvertTo-Json` 往数组里加对象：PS 5.1 会把嵌套数组写成 `{"value": [...], "Count": n}`，Dalamud 会解析失败。上面的脚本会按标准扁平数组写出。
-
 ## 说明
 
 - 插件之间保持各自独立的 `InternalName`，可与对应的英文原版同时安装。
